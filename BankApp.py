@@ -97,7 +97,7 @@ if page == pages[0] :
 elif page == pages[1] :
 
     st.write("# **Data exploration**")
-    df =pd.read_csv('/Users/isslamkhatir/Downloads/StreamlitProjects/bank.csv', sep = ",")
+    df =pd.read_csv('bank.csv', sep = ",")
     st.dataframe(df.head())
 
     st.write("## I - Structuring the data ")
@@ -515,7 +515,7 @@ elif page == pages[1] :
 
 elif page == pages[2] :
     st.write( " # Classification Model")
-    df = pd.read_csv('/Users/isslamkhatir/Downloads/StreamlitProjects/bank.csv', sep = ",")
+    df = pd.read_csv('bank.csv', sep = ",")
 
     dep = df['deposit']
     df.drop(labels=['deposit'], axis=1,inplace=True)
