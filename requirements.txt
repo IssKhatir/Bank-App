@@ -2,3 +2,4 @@ matplotlib
 seaborn
 scikit-learn
 squarify
+plotly
