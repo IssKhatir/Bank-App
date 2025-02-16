@@ -1,6 +1,3 @@
 matplotlib
 seaborn
-sklearn.preprocessing
-StandardScaler
-OneHotEncoder
-LabelEncoder
+scikit-learn
