@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import os
 os.system("pip install matplotlib")
-pip install matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder
