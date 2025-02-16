@@ -441,35 +441,25 @@ elif page == pages[1] :
     
     data = [trace0, trace1]
     layout = go.Layout(title="The Impact of Loans to Married/Educational Clusters",
-                       xaxis=dict(showgrid=False,showline=True,
-                                  linecolor='rgb(102, 102, 102)',
+                       xaxis=dict(showgrid=False,showline=True,linecolor='rgb(102, 102, 102)',
                                   titlefont=dict(color='rgb(204, 204, 204)'),
                                   tickfont=dict(color='rgb(102, 102, 102)'),
-        showticklabels=False,
-        dtick=10,
-        ticks='outside',
-        tickcolor='rgb(102, 102, 102)'
-    ),
-    margin=dict(l=140, r=40, b=50, t=80),
-    legend=dict(
-        font=dict(size=10),
-        yanchor='middle',
-        xanchor='right'
-    ),
-    width=1000,
-    height=800,
-    paper_bgcolor='rgb(255,250,250)',
-    plot_bgcolor='rgb(255,255,255)',
-    hovermode='closest'
-)
-
+                                  showticklabels=False,dtick=10,ticks='outside',tickcolor='rgb(102, 102, 102)'),
+                        margin=dict(l=140,r=40,b=50,t=80),
+                        legend=dict(font=dict(size=10),yanchor='middle',xanchor='right'),
+                        width=1000,
+                        height=800,
+                        paper_bgcolor='rgb(255,250,250)',
+                        plot_bgcolor='rgb(255,255,255)',
+                        hovermode='closest'
+                        )
     fig = go.Figure(data=data, layout=layout)
     st.plotly_chart(fig,filename='lowest-oecd-votes-cast')
     
     st.write("#### Marital/Education Pairwise Relationship Visualization")
     sns.set(style="ticks")
     sns.pairplot(df, hue="marital/education", palette="Set1")
-    st.pyplot()
+    st.pyplot(fig)
 
     st.write("#### Balances Distribution by Job and Deposit Status")
 
