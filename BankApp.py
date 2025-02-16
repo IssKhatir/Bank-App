@@ -459,7 +459,7 @@ elif page == pages[1] :
     st.write("#### Marital/Education Pairwise Relationship Visualization")
     sns.set(style="ticks")
     sns.pairplot(df, hue="marital/education", palette="Set1")
-    st.pyplot(fig)
+    st.pyplot()
 
     st.write("#### Balances Distribution by Job and Deposit Status")
 
