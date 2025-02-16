@@ -2,8 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import os
-os.system("conda install matplotlib")
-import matplotlib
+os.system("pip install matplotlib")
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder
