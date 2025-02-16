@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import os
-os.system("pip install matplotlib")
+os.system("python3 -m pip install matplotlib")
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
