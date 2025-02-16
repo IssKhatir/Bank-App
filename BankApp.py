@@ -444,7 +444,7 @@ elif page == pages[1] :
                        xaxis=dict(showgrid=False,showline=True,linecolor='rgb(102, 102, 102)',
                                   titlefont=dict(color='rgb(204, 204, 204)'),
                                   tickfont=dict(color='rgb(102, 102, 102)'),
-                                  showticklabels=False,ticks='outside',tickcolor='rgb(102, 102, 102)'),
+                                  showticklabels=True,dtick=10,ticks='outside',tickcolor='rgb(102, 102, 102)'),
                                   margin=dict(l=140,r=40,b=50,t=80),
                                   legend=dict(font=dict(size=10),yanchor='middle',xanchor='right'),
                                   width=1000,
