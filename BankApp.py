@@ -445,14 +445,13 @@ elif page == pages[1] :
                                   titlefont=dict(color='rgb(204, 204, 204)'),
                                   tickfont=dict(color='rgb(102, 102, 102)'),
                                   showticklabels=False,dtick=10,ticks='outside',tickcolor='rgb(102, 102, 102)'),
-                        margin=dict(l=140,r=40,b=50,t=80),
-                        legend=dict(font=dict(size=10),yanchor='middle',xanchor='right'),
-                        width=1000,
-                        height=800,
-                        paper_bgcolor='rgb(255,250,250)',
-                        plot_bgcolor='rgb(255,255,255)',
-                        hovermode='closest'
-                        )
+                                  margin=dict(l=140,r=40,b=50,t=80),
+                                  legend=dict(font=dict(size=10),yanchor='middle',xanchor='right'),
+                                  width=1000,
+                                  height=800,
+                                  paper_bgcolor='rgb(255,250,250)',
+                                  plot_bgcolor='rgb(255,255,255)',
+                                  hovermode='closest')
     fig = go.Figure(data=data, layout=layout)
     st.plotly_chart(fig,filename='lowest-oecd-votes-cast')
     
