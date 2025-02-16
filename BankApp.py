@@ -137,10 +137,9 @@ elif page == pages[1] :
     st.pyplot(f)
 
     st.write("#### I.1.4 The distribution of the numerical data : ")
-
-    st.set_option('deprecation.showPyplotGlobalUse', False)
     fig = plt.style.use('seaborn-v0_8-darkgrid')
-    df.hist(bins=20, figsize=(14,10), color='#E14906')
+    fig, ax = plt.subplots(figsize=(14, 10))
+    df.hist(bins=20, color='#E14906', ax=ax)
     st.pyplot(fig)
 
     st.write("#### I.1.5 Comptage des valeurs de la colonne 'deposit' : ")
