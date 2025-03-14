@@ -441,7 +441,7 @@ elif page == pages[1] :
     
     data = [trace0, trace1]
     layout = go.Layout(title="The Impact of Loans to Married/Educational Clusters", xaxis=dict(showgrid=False,showline=True,linecolor='rgb(102, 102, 102)',
-                                                                                    titlefont=dict(color='rgb(204, 204, 204)'),
+                                                                                    title=dict(font=dict(color='rgb(204, 204, 204)')),
                                                                                     tickfont=dict(color='rgb(102, 102, 102)'),
                                                                                     showticklabels=False,ticks='outside',tickcolor='rgb(102, 102, 102)'),
                                   margin=dict(l=140,r=40,b=50,t=80),
